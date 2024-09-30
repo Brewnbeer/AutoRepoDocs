@@ -135,3 +135,8 @@ If you have any questions, feel free to open an issue or reach out through GitHu
 
     ```bash
     You can copy and paste this directly into your project’s `README.md` file. Be sure to replace `yourusername` with your actual GitHub username       in the links!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
