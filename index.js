@@ -226,11 +226,14 @@ async function createFiles() {
   });
 
   const repoLink = "https://github.com/perfect7613";
+  const anotherRepoLink = "https://github.com/aditya305";
+
+  const hyperlink = (text, url) => `\x1b]8;;${url}\x1b\\${text}\x1b]8;;\x1b\\`;
 
   console.log(
     chalk.green.bold("\nCommunity health files setup has been done successfully! ✅")
   );
-  console.log(chalk.yellow(`If you appreciate my efforts, please consider supporting me by ⭐ my repository on GitHub: ${repoLink}`));
+  console.log(chalk.yellow(`If you appreciate my efforts, please consider supporting us by ⭐ our repositories and following on GitHub: ${hyperlink("Amey Muke", repoLink)} and ${hyperlink("Aditya Sutar", anotherRepoLink)}`));
 }
 
 // Execute file creation
