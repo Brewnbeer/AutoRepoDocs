@@ -141,23 +141,26 @@ ensureDirectoriesExist([githubFolder, discussionTemplateFolder, issueTemplateFol
 // Function to collect user inputs for templates
 async function collectUserInputs() {
   const userInputs = {};
-  userInputs.authorName = await askQuestion("❗ What is the repository owner's name?\n➜ ", true);
-  userInputs.projectLicense = await askQuestion("❗ What is the project license? (e.g., MIT, Apache, GPL):\n➜ ", true);
-  userInputs.bugAssignee = await askQuestion("❗ Whom would you like to assign the raised bugs to?\n➜ ", true);
-  userInputs.enhancementAssignee = await askQuestion("❗ Who should be assigned the enhancement requests?\n➜ ", true);
-  userInputs.featureAssignee = await askQuestion("❗ To whom would you like to assign the feature requests?\n➜ ", true);
-  userInputs.questionAssignee = await askQuestion("❗ Who will be responsible for addressing questions related to the project?\n➜ ", true);
-  userInputs.orgName = await askQuestion("❗ What is your organization name?\n➜ ", true);
-  userInputs.socialMedia = await askQuestion("❗ What is your social media URL to connect?\n➜ ", true);
-  userInputs.email = await askQuestion("❗ Please provide the email address for developers and contributors to contact you:\n➜ ", true);
 
-  const githubUsername = await askQuestion("Please provide the GitHub username(s) for funding (comma separated) or leave blank if none:\n➜ ", false);
+  // Custom questions for collecting inputs
+  userInputs.authorName = await askQuestion("🌟 What is the name of the project owner or maintainer?\n➜ ", true);
+  userInputs.projectLicense = await askQuestion("📜 Which license type are you using for this project? (e.g., MIT, Apache 2.0, GPL):\n➜ ", true);
+  userInputs.bugAssignee = await askQuestion("🐛 Who should be assigned to manage and fix bugs?\n➜ ", true);
+  userInputs.enhancementAssignee = await askQuestion("🔧 Who will handle the requests for feature enhancements?\n➜ ", true);
+  userInputs.featureAssignee = await askQuestion("✨ Who will take care of adding new features?\n➜ ", true);
+  userInputs.questionAssignee = await askQuestion("❓ Who should address any general or technical questions?\n➜ ", true);
+  userInputs.orgName = await askQuestion("🏢 What's the name of your organization or company?\n➜ ", true);
+  userInputs.socialMedia = await askQuestion("🔗 Please provide your organization's social media link (e.g., Twitter, LinkedIn):\n➜ ", true);
+  userInputs.email = await askQuestion("✉ What's the contact email for developers or contributors?\n➜ ", true);
+
+  // Optional questions
+  const githubUsername = await askQuestion("👤 Enter GitHub username(s) for funding, separated by commas (leave blank if none):\n➜ ", false);
   userInputs.githubUsername = githubUsername ? githubUsername.split(',').map(user => user.trim()).join(', ') : '';
 
-  userInputs.patreonUsername = await askQuestion("Enter the Patreon username for funding (leave blank if none):\n➜ ", false);
-  userInputs.tideliftPackage = await askQuestion("Enter the Tidelift package name (e.g., npm/package-name) for funding (leave blank if none):\n➜ ", false);
+  userInputs.patreonUsername = await askQuestion("💰 Enter the Patreon username for funding (leave blank if none):\n➜ ", false);
+  userInputs.tideliftPackage = await askQuestion("📦 Provide the Tidelift package name (e.g., npm/package-name) for funding (leave blank if none):\n➜ ", false);
 
-  const customFunding = await askQuestion("Enter any custom funding URLs (comma separated) or leave blank if none:\n➜ ", false);
+  const customFunding = await askQuestion("🔗 Add any custom funding URLs (comma separated) or leave blank if none:\n➜ ", false);
   userInputs.customFunding = customFunding ? customFunding.split(',').map(url => url.trim()).join(', ') : '';
 
   return userInputs;
