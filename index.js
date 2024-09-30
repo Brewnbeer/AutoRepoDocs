@@ -4,7 +4,6 @@ import readline from 'readline';
 import chalk from 'chalk';
 import ora from 'ora';
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
-import chalkAnimation from 'chalk-animation';
 import OpenAI from "openai";
 import Anthropic from "@anthropic-ai/sdk";
 
@@ -67,7 +66,7 @@ async function getOpenAIContent(prompt) {
   try {
     const completion = await openai.chat.completions.create({
       messages: [{ role: "system", content: "You are a helpful assistant." }, { role: "user", content: prompt }],
-      model: "gpt-4"
+      model: "gpt-4o-mini"
     });
     return completion.choices[0].message.content;
   } catch (error) {
@@ -166,11 +165,10 @@ async function collectUserInputs() {
 
 // Function to generate files with AI-generated content
 async function createFiles() {
-  const spinner = ora('Generating AI content...').start();
-  
-  // Collect platform and user inputs
+  // Wait for platform selection and user inputs before proceeding
   await selectPlatform();
   const userInputs = await collectUserInputs();
+  const spinner = ora('Generating AI content...').start();
 
   // Generate AI content concurrently for all templates
   const [
