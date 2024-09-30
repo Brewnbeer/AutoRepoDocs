@@ -58,10 +58,10 @@ Before you start using the tool, ensure that you have an API key from one of the
 
 If you wish to set up the key as an environment variable (optional), you can do so as follows:
 
-    ```bash
-    export OPENAI_API_KEY=your_openai_api_key
-    export GEMINI_API_KEY=your_gemini_api_key
-    export CLAUDE_API_KEY=your_claude_api_key
+      ```bash
+      export OPENAI_API_KEY="your_actual_openai_api_key"
+      export GEMINI_API_KEY="your_actual_gemini_api_key"
+      export CLAUDE_API_KEY="your_actual_claude_api_key"
 
 Alternatively, the CLI will prompt you for the API key during runtime.
 
