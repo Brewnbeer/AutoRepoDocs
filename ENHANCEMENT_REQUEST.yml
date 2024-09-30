@@ -1,0 +1,33 @@
+name: "Enhancement Request"
+description: "Request an enhancement or improvement to an existing feature"
+title: "[Enhancement]: [Enter a brief description]"
+labels: ["enhancement"]
+assignees: ["@username"]
+
+body:
+  - type: textarea
+    id: enhancement-description
+    attributes:
+      label: "Enhancement Description"
+      description: "Please provide a detailed description of the requested enhancement"
+      placeholder: "I'd like to improve..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: "Justification"
+      description: "Why is this enhancement important?"
+      placeholder: "This will improve the project because..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: potential-risks
+    attributes:
+      label: "Potential Risks"
+      description: "Are there any risks associated with this enhancement?"
+      placeholder: "This could introduce..."
+    validations:
+      required: false

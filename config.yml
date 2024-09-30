@@ -1,0 +1,18 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "General Support"
+    url: "https://github.com/yourusername/your-repository/discussions"
+    about: "Please use GitHub Discussions for general support and questions."
+issue_templates:
+  - name: "Bug Report"
+    description: "Report a bug or issue with the project"
+    title: "[Bug]: [Enter a brief description]"
+    labels: ["bug", "needs-triage"]
+  - name: "Feature Request"
+    description: "Suggest a new feature or enhancement"
+    title: "[Feature]: [Enter a brief description]"
+    labels: ["enhancement", "feature-request"]
+  - name: "Enhancement Request"
+    description: "Request an enhancement or improvement to an existing feature"
+    title: "[Enhancement]: [Enter a brief description]"
+    labels: ["enhancement"]
