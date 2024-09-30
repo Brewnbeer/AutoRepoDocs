@@ -36,8 +36,8 @@ This project is an AI-powered tool designed to generate community health files f
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/ai-community-health.git
-   cd ai-community-health
+   git clone https://github.com/Brewnbeer/AutoRepoDocs
+   cd AutoRepoDocs
 
 2. Install the dependencies:
 
