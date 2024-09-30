@@ -86,15 +86,15 @@ Once completed, the generated files will be available in the `.github` and `docs
 ## Available AI Platforms
 This tool supports three major AI platforms for generating content:
 
-## 1. OpenAI (GPT-4)
+## 1. OpenAI (GPT 4o)
   - Requires an OpenAI API key.
   - Generates content using the GPT-4 model.
     
-## 2. Google Gemini
+## 2. Google Gemini (1.5 Flash)
   - Requires a Google Gemini API key.
   - Utilizes Google's generative AI services with customizable safety settings.
 
-## 3. Anthropic Claude
+## 3. Anthropic Claude (3.5 Sonnet)
   - Requires a Claude API key from Anthropic.
   - Claude is designed to generate safe and useful AI content.
 
