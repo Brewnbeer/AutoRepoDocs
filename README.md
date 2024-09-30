@@ -1,7 +1,7 @@
 
 # AI-Powered Community Health File Generator
 
-![Project Logo](./assets/autorepodocs-logo.png)
+![Project Logo](https://raw.githubusercontent.com/Brewnbeer/AutoRepoDocs/refs/heads/main/assets/autorepodocs-logo.png)
 
 This project is an AI-powered tool designed to generate community health files for repositories. It supports multiple AI platforms including OpenAI (GPT-4), Google Gemini, and Anthropic's Claude. Using the selected platform, it generates various repository templates such as issue templates, pull request templates, and more.
 

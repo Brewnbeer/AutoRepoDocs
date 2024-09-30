@@ -1,15 +1,25 @@
 {
-  "name": "cli-tool",
-  "version": "1.0.0",
+  "name": "auto-repo-docs",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "auto-repo-docs": "./index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "ai",
+    "cli",
+    "npm",
+    "auto-repo-docs",
+    "repository",
+    "docs"
+  ],
+  "author": "Amey Muke, Aditya Sutar",
+  "license": "MIT",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.27.3",
     "@google/generative-ai": "^0.20.0",
