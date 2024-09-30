@@ -35,3 +35,27 @@ This project is an AI-powered tool designed to generate community health files f
    ```bash
    git clone https://github.com/yourusername/ai-community-health.git
    cd ai-community-health
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+
+## Requirements
+  - Node.js (v14 or above)
+  - NPM (or Yarn)
+  - API keys from any of the supported platforms:
+    - OpenAI API Key
+    - Google Gemini API Key
+    - Anthropic Claude API Key
+   
+
+## Setup
+Before you start using the tool, ensure that you have an API key from one of the supported platforms. When prompted by the CLI, you will need to provide the key.
+
+If you wish to set up the key as an environment variable (optional), you can do so as follows:
+
+  ```bash
+  export OPENAI_API_KEY=your_openai_api_key
+  export GEMINI_API_KEY=your_gemini_api_key
+  export CLAUDE_API_KEY=your_claude_api_key
