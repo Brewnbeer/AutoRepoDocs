@@ -130,6 +130,9 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## Contributing
 We welcome contributions! Please feel free to submit a pull request or open an issue to help improve this tool.
 
+## Video
+https://youtu.be/Sck8FjUpLR0?si=bKFMGWvagkA_TLa7
+
 ## Support
 If you have any questions, feel free to open an issue or reach out through GitHub Discussions.
 
