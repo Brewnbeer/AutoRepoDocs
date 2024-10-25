@@ -131,7 +131,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 We welcome contributions! Please feel free to submit a pull request or open an issue to help improve this tool.
 
 ## Video
-https://youtu.be/Sck8FjUpLR0?si=bKFMGWvagkA_TLa7
+https://youtu.be/FaR5umoVkVk
 
 ## Support
 If you have any questions, feel free to open an issue or reach out through GitHub Discussions.
